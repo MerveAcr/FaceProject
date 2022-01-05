@@ -9,8 +9,8 @@ import cucumber.api.junit.Cucumber;
 	@CucumberOptions(
 			features="./src/test/resources/feature",
 			glue="step_definations",
-			dryRun=false
-			)
+			dryRun=false,
+			tags="@email")
 	
 public class CukesRunner {
 	

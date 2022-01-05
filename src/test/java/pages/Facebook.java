@@ -11,34 +11,33 @@ public class Facebook {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 	
-	@FindBy(xpath="//a[text()=\"Yeni Hesap Oluþtur\"]")
+	@FindBy(xpath="//a[text()=\"Yeni Hesap Oluï¿½tur\"]")
 	public WebElement yeniHesapOlstur;
 	
 	@FindBy(xpath="//div[text()=\"Kaydol\"]")
 	public WebElement title;
 	
-	@FindBy(xpath="//div[text()=\"Hýzlý ve kolaydýr.\"]")
+	@FindBy(xpath="//div[text()=\"Hï¿½zlï¿½ ve kolaydï¿½r.\"]")
 	public WebElement subtitle;
 	
 	@FindBy(css="input[name=\"firstname\"]")
 	public WebElement firstName;
 	
-	@FindBy(xpath="//div[text()=\"Soyadýn\"]")
+	@FindBy(xpath="//div[text()=\"Soyadï¿½n\"]")
 	public WebElement lastName;
 	
-	@FindBy(xpath="//div[text()=\"Cep telefonu numarasý veya e-posta\"]")
+	@FindBy(xpath="//div[text()=\"Cep telefonu numarasï¿½ veya e-posta\"]")
 	public WebElement numberOrEmail;
 	
-	@FindBy(xpath="//div[text()=\"Yeni þifre\"]")
+	@FindBy(xpath="//div[text()=\"Yeni ï¿½ifre\"]")
 	public WebElement password;
 	
-	@FindBy(xpath="//div[text()=\"Doðum Tarihi\"]")
+	@FindBy(xpath="//div[text()=\"Doï¿½um Tarihi\"]")
 	public WebElement birthday;
 	
 	@FindBy(xpath="//div[text()=\"Cinsiyet\"]")
 	public WebElement gender;
-	
-	
+
 	@FindBy(xpath="//div[@class=\"_1lch\"]//button[text()=\"Kaydol\"]")
 	public WebElement signInButton;
 	
