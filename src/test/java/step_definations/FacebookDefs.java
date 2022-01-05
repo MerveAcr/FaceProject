@@ -40,7 +40,7 @@ public class FacebookDefs {
 	@Then("^user able to see firstname label$")
 	public void user_able_to_see_firstname_label() throws Throwable {
 		String firstNameLabel = home.firstName.getAttribute("aria-label");
-		  Assert.assertEquals(firstNameLabel, "Adýn");
+		  Assert.assertEquals(firstNameLabel, "Adï¿½n");
 		  Thread.sleep(3000);
 	}
 
@@ -73,11 +73,6 @@ public class FacebookDefs {
 		  Assert.assertTrue(home.gender.isDisplayed());
 		  Thread.sleep(3000);
 	}
-
-//	@Then("^user able to see policy message$")
-//	public void user_able_to_see_policy_message() throws Throwable {
-//	    
-//	}
 
 	@Then("^user able to see sign up button text$")
 	public void user_able_to_see_sign_up_button_text() throws Throwable {
